@@ -1,9 +1,9 @@
 /* 
-  MissingLocalizedStrings.strings
+  Localizable.strings
   PhoneNumberKit
 
   Created by George Nyame on 2021-08-06.
   Copyright © 2021 Roy Marmelstein. All rights reserved.
 */
 
-"Choose your country" = "TEST TEST TEST"
+"Choose your country" = "This is Canadian French";
