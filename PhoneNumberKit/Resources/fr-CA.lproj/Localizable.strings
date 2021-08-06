@@ -6,6 +6,6 @@
   Copyright © 2021 Roy Marmelstein. All rights reserved.
 */
 
-"CHOOSE_YOUR_COUNTRY" = "Choose your country (FRENCH NEEDED)";
-"CURRENT" = "Current (FRENCH NEEDED)";
-"COMMON" = "Common (FRENCH NEEDED)";
+"CHOOSE_YOUR_COUNTRY" = "Choisissez votre pays"
+"CURRENT" = "Actuel";
+"COMMON" = "Courant";
