@@ -156,9 +156,9 @@ public class CountryCodePickerViewController: UITableViewController {
         } else if section == 0, hasCurrent {
             return NSLocalizedString("CURRENT", bundle: .module, comment: "Section Title of Current Section")
         } else if section == 0, !hasCurrent, hasCommon {
-            return NSLocalizedString("COMMON", bundle: .module, comment: "Section Title of Common Sections")
+            return NSLocalizedString("COMMON", bundle: .module, comment: "Section Title of Common Section")
         } else if section == 1, hasCurrent, hasCommon {
-            return NSLocalizedString("COMMON", bundle: .module, comment: "Section Title of Common Sections")
+            return NSLocalizedString("COMMON", bundle: .module, comment: "Section Title of Common Section")
         }
         return countries[section].first?.name.first.map(String.init)
     }
