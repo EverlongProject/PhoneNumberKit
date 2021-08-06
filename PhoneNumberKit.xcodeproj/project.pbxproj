@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F64F14F26BD8B5E00598B72 /* MissingLocalizedStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F64F14E26BD8B5E00598B72 /* MissingLocalizedStrings.strings */; };
 		11C2EF391D62BC3200052D44 /* NSRegularExpression+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C2EF381D62BC3200052D44 /* NSRegularExpression+Swift.swift */; };
 		1B0651171E2AD698006AE849 /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0651161E2AD698006AE849 /* PhoneNumberFormatter.swift */; };
 		1B1A4DD723007580006AE849 /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0651161E2AD698006AE849 /* PhoneNumberFormatter.swift */; };
@@ -94,6 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F64F14E26BD8B5E00598B72 /* MissingLocalizedStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = MissingLocalizedStrings.strings; sourceTree = "<group>"; };
 		11C2EF381D62BC3200052D44 /* NSRegularExpression+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Swift.swift"; sourceTree = "<group>"; };
 		1B0651161E2AD698006AE849 /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
 		3417BD6A2210AC4900477EE7 /* MetadataParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataParsing.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				3435CC951BBFF66F003F953B /* PhoneNumberMetadata.json */,
+				0F64F14E26BD8B5E00598B72 /* MissingLocalizedStrings.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F64F14F26BD8B5E00598B72 /* MissingLocalizedStrings.strings in Resources */,
 				34CA34522380307300788D7D /* PhoneNumberMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
