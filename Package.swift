@@ -21,7 +21,7 @@ let package = Package(
                           "Info.plist", 
                           "Bundle+Resources.swift"],
                 resources: [
-                    .process("Resources/PhoneNumberMetadata.json")
+                    .process("Resources")
                 ]),
         .testTarget(name: "PhoneNumberKitTests",
                     dependencies: ["PhoneNumberKit"],
