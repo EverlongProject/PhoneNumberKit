@@ -95,9 +95,7 @@ public class CountryCodePickerViewController: UITableViewController {
     }
 
     func commonInit() {
-//        self.title = NSLocalizedString("PhoneNumberKit.CountryCodePicker.Title", value: "Choose your country", comment: "Title of CountryCodePicker ViewController")
-        self.title = NSLocalizedString("PhoneNumberKit.CountryCodePicker.Title", bundle: .module, comment: "Title of CountryCodePicker ViewController")
-//        self.title = NSLocalizedString("CHOOSE_YOUR_COUNTRY", bundle: .module, comment: "Title of CountryCodePicker ViewController")
+        self.title = NSLocalizedString("CHOOSE_YOUR_COUNTRY", bundle: .module, comment: "Title of CountryCodePicker ViewController")
 
         tableView.register(Cell.self, forCellReuseIdentifier: Cell.reuseIdentifier)
         searchController.searchResultsUpdater = self
@@ -156,11 +154,11 @@ public class CountryCodePickerViewController: UITableViewController {
         if isFiltering {
             return nil
         } else if section == 0, hasCurrent {
-            return NSLocalizedString("PhoneNumberKit.CountryCodePicker.Current", value: "Current", comment: "Name of \"Current\" section")
+            return NSLocalizedString("CURRENT", bundle: .module, comment: "Section Title of Current Section")
         } else if section == 0, !hasCurrent, hasCommon {
-            return NSLocalizedString("PhoneNumberKit.CountryCodePicker.Common", value: "Common", comment: "Name of \"Common\" section")
+            return NSLocalizedString("COMMON", bundle: .module, comment: "Section Title of Common Sections")
         } else if section == 1, hasCurrent, hasCommon {
-            return NSLocalizedString("PhoneNumberKit.CountryCodePicker.Common", value: "Common", comment: "Name of \"Common\" section")
+            return NSLocalizedString("COMMON", bundle: .module, comment: "Section Title of Common Sections")
         }
         return countries[section].first?.name.first.map(String.init)
     }
