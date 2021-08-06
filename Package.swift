@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "PhoneNumberKit",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v9), .macOS(.v10_10), .tvOS(.v9), .watchOS(.v2)
     ],
@@ -20,7 +21,7 @@ let package = Package(
                           "Info.plist", 
                           "Bundle+Resources.swift"],
                 resources: [
-                    .process("Resources/PhoneNumberMetadata.json")
+                    .process("Resources")
                 ]),
         .testTarget(name: "PhoneNumberKitTests",
                     dependencies: ["PhoneNumberKit"],
