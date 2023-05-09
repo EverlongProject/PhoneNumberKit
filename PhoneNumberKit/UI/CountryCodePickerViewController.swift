@@ -1,10 +1,10 @@
 
-#if canImport(UIKit)
+#if os(iOS)
 
 import UIKit
 
 @available(iOS 11.0, *)
-public protocol CountryCodePickerDelegate: class {
+public protocol CountryCodePickerDelegate: AnyObject {
     func countryCodePickerViewControllerDidPickCountry(_ country: CountryCodePickerViewController.Country)
 }
 
@@ -33,7 +33,7 @@ public class CountryCodePickerViewController: UITableViewController {
     lazy var allCountries = phoneNumberKit
         .allCountries()
         .compactMap({ Country(for: $0, with: self.phoneNumberKit) })
-        .sorted(by: { $0.name.caseInsensitiveCompare($1.name) == .orderedAscending })
+        .sorted(by: { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending })
 
     lazy var countries: [[Country]] = {
         let countries = allCountries
@@ -101,7 +101,11 @@ public class CountryCodePickerViewController: UITableViewController {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.backgroundColor = .clear
+      
+        #if os(iOS) || os(macOS) || os(watchOS)
         navigationItem.searchController = searchController
+        #endif
+
         definesPresentationContext = true
     }
 
